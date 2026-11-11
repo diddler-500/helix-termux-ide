@@ -1,0 +1,10 @@
+# Helix editor settings (Termux + Python IDE setup)
+theme = "monokai_aqua"
+
+[editor]
+auto-pairs = true
+auto-completion = true
+completion-trigger-len = 1
+# Delay in milliseconds before the completion popup shows up on its own.
+# Ctrl-x always opens it instantly. Helix's default delay is 250.
+completion-timeout = 10000

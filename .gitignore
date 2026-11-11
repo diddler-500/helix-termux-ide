@@ -1,0 +1,13 @@
+# Backups made by install.sh
+*.bak
+*.bak-*
+
+# Built Helix grammars (large, re-creatable)
+runtime/
+*.so
+
+# Python / editor junk
+__pycache__/
+*.pyc
+*.swp
+.DS_Store

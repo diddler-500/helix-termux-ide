@@ -1,0 +1,16 @@
+# Only fetch and build syntax grammars for these languages.
+# This key must stay above the [[language]] sections.
+use-grammars = { only = ["python", "bash", "toml", "markdown"] }
+
+[language-server.jedi-ls]
+command = "/data/data/com.termux/files/home/bin/jedi-ls-fast"
+timeout = 15
+
+[language-server.jedi-ls.config]
+completion = { disableSnippets = true, resolveEagerly = false }
+diagnostics = { enable = true }
+jediSettings = { caseInsensitiveCompletion = true, autoImportModules = ["os", "re", "socket", "subprocess"] }
+
+[[language]]
+name = "python"
+language-servers = ["jedi-ls"]

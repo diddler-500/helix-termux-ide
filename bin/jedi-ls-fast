@@ -1,0 +1,13 @@
+#!/data/data/com.termux/files/usr/bin/python
+
+import jedi
+
+# Reduce expensive dynamic analysis
+jedi.settings.dynamic_params = False
+jedi.settings.dynamic_params_for_other_modules = False
+jedi.settings.dynamic_array_additions = False
+
+# Start Jedi Language Server
+from jedi_language_server.cli import cli
+
+cli()
